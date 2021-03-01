@@ -9,7 +9,7 @@ const List = (props) => {
     const cut = () => setLine(true);
     return (
         <>
-            <div className='btnlist'>
+            <div className='btnlist' style={{display:props.value!==""?'block':"none"}}>
                 <button className='btn' onClick={cut} onDoubleClick={()=>props.delete(props.id)}>{line?<DeleteForeverIcon/>:<ClearIcon/>}</button><li className='list' style={{textDecoration:line?'line-through':'none',color:line?'gray':'none'}}>{props.value}</li>
             </div>
         </>

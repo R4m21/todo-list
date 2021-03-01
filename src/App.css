@@ -73,6 +73,7 @@ html{ font-size: 62.5%; }
     display: inline;
     margin-left: 1rem;
     font-size: 1.8rem;
+    word-wrap:break-word;
 }
 ::-webkit-scrollbar{ width: 1rem; }
 
